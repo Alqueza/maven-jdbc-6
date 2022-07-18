@@ -1,16 +1,16 @@
-package org.example;
+package org.example.service;
 
 import org.example.model.Employee;
 
 import java.util.List;
 
 public interface EmpService {
-    void createEmployee();
-    String addEmployee();
+    void createEmployeeTable();
+    String addEmployee(Employee employee);
     void dropTable();
     void cleanTable();
     void alterTable();
     Employee updateEmp(Employee employee);
-    List<Employee> getAllEmployee(List<Employee> employees);
+    List<Employee> getAllEmployee();
     List<Employee> sortTable();
 }

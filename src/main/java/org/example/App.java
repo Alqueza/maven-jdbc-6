@@ -1,13 +1,15 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import com.sun.tools.example.debug.tty.MessageOutput;
+import org.example.service.EmpService;
+import org.example.service.EmpServiceImpl;
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        EmpService empService = new EmpServiceImpl();
+        empService.createEmployeeTable();
+
     }
 }
